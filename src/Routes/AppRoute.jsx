@@ -6,6 +6,7 @@ import MyLayout from "../components/MyLayout";
 import Navbar from "../components/Navbar/Navbar";
 import Dasboard from "../pages/Dasboard/Dasboard";
 import Login from "../pages/Login/Login";
+import Kandidat from "../pages/Kandidat/Kandidat";
 
 const AppRoute = () => {
   return (
@@ -26,6 +27,14 @@ const AppRoute = () => {
             element={
               <ProtectedRoute requiredRole="admin bem">
                 <Dasboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="admin/kandidat"
+            element={
+              <ProtectedRoute requiredRole="admin bem">
+                <Kandidat />
               </ProtectedRoute>
             }
           />

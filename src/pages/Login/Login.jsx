@@ -59,7 +59,7 @@ function Login() {
           children={loading ? "Logging in..." : "Login"}
           onClick={handleLogin}
           disabled={loading}
-          className={`w-full font-semibold transition duration-200 ${
+          className={`w-full font-semibold transition duration-200 bg-blue-500 text-white ${
             loading ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-600"
           }`}
           ref={buttonLogin}
